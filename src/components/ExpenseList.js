@@ -12,7 +12,7 @@ export const ExpenseList = (props) => (
                     <ExpenseListItem key={expense.id} {...expense} />
                 ))
             )
-        };
+        }
     </div>
 );
 

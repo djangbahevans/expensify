@@ -5,7 +5,8 @@
   "author": "Kurt Fynn",
   "license": "MIT",
   "scripts": {
-    "build": "webpack",
+    "build:dev": "webpack",
+    "build:prod": "webpack -p --env production",
     "devServer": "webpack-dev-server",
     "test": "jest --config=jest.config.json"
   },
@@ -25,6 +26,7 @@
     "enzyme": "^3.6.0",
     "enzyme-adapter-react-16": "^1.5.0",
     "enzyme-to-json": "^3.3.4",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "jest": "^23.6.0",
     "moment": "^2.22.2",
     "node-sass": "^4.9.3",
