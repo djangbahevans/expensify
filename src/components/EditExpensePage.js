@@ -28,10 +28,8 @@ const mapDispatchToProps = dispatch => ({
     removeExpense: id => dispatch(removeExpense({ id }))
 });
 
- const mapStateToProps = (state, props) => {
-     return {
+ const mapStateToProps = (state, props) => ({
          expense: state.expenses.find(expense => expense.id === props.match.params.id)
-     };
- };
+     });
 
 export default connect(mapStateToProps, mapDispatchToProps)(EditExpensePage);
